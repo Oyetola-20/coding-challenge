@@ -1,3 +1,4 @@
+// 1
 function calculateTotal() {
   let cart = [
     { name: "Apple", price: 2, quantity: 3 },
@@ -12,6 +13,7 @@ function calculateTotal() {
 }
 console.log(calculateTotal());
 
+// 2
 function getTopScorer() {
   let students = [
     { name: "John", scores: [90, 85, 88] },
@@ -24,9 +26,29 @@ function getTopScorer() {
 }
 console.log(getTopScorer());
 
-// function convertToArray() {
-//   let person = { name: "Alice", age: 25, country: "USA" };
+// 3
+function convertToArray() {
+  const person = { name: "Alice", age: 25, country: "USA" };
+  let myArray = [];
+  myArray.push(
+    ["name", person.name],
+    ["age", person.age],
+    ["country", person.country]
+  );
+  return myArray;
+}
+console.log(convertToArray());
 
-//   let {name, age, country} = person;   
+// 4
+// function groupByAge() {
+//   let people = [
+//     { name: "Alice", age: 25 },
+//     { name: "Bob", age: 30 },
+//     { name: "Charlie", age: 25 },
+//   ];
+
+
+//   return people[1].age
 // }
-// console.log(convertToArray());
+// console.log(groupByAge());
+
